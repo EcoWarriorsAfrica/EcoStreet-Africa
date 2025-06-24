@@ -1,145 +1,159 @@
-EcoWarriors Africa
-EcoWarriors Africa is an immersive, educational driving simulation game where you step into the role of a young EcoWarrior tasked with delivering seedlings, recycling bins, and solar kits across real-world-inspired African cities. Our mission is to provide a fun, replayable experience that empowers players to learn about sustainable practices—fuel efficiency, waste management, renewable energy—through hands-on gameplay.
 
-Project Purpose and Vision
-Educate: Integrate real-world environmental data and eco-tips into gameplay to teach sustainable practices in bite-sized, memorable segments.
 
-Entertain: Offer dynamic driving mechanics, timed challenges, and various missions (tree planting, waste collection, solar kit delivery) to keep players engaged.
 
-Inspire Action: Show players the tangible impact of their virtual actions—reducing CO₂, planting trees, cleaning rivers—encouraging real-life environmental stewardship.
+EcoWarriors Africa: Gamified Climate Action
+🌍 Project Overview
+EcoWarriors Africa is an innovative multiplayer quest game designed to inspire and facilitate behavioral change towards environmental sustainability across the African continent. Through engaging gamified mechanics, players embark on critical sustainability missions within beautifully rendered virtual representations of real African cities. Our core mission is to foster climate education, promote sustainable habits, and cultivate a vibrant community of environmental champions.
 
-Target Audience
-Age Range: 10–25 years (students, educators, eco-enthusiasts)
+The game aims to bridge the gap between awareness and action by providing a fun, interactive, and impactful platform for users to learn about pressing environmental issues, understand their role in climate solutions, and contribute to a greener future.
 
-Interest Groups: Casual and educational gamers, schools, NGOs, youth climate clubs
+✨ Features
+Real African Cities: Explore meticulously crafted virtual environments based on iconic African cities (e.g., Nairobi, Accra, Cape Town, Lagos, Cairo), complete with landmarks and environmental hotspots.
 
-Supported Platforms: Windows and macOS for desktop, with planned support for Android and iOS mobile platforms in future releases
+Diverse Sustainability Missions: Engage in a wide array of quests focused on critical environmental challenges such as:
 
-Key Features
-Driving-Based Missions: Navigate realistic city roads delivering cargo—choose efficient routes, avoid obstacles, and manage fuel to earn top ratings.
+Waste Management: Clean-up drives, recycling challenges, and upcycling projects.
 
-Educational Overlays: Display pop-up facts during gameplay (for example, “Driving at 50 km/h can reduce fuel consumption by 20%”).
+Water Conservation: Leak detection, efficient water use mini-games.
 
-City Progression: Increase each city’s EcoHealth meter and unlock new vehicles, missions, and story beats as you accumulate Environmental Points (EP).
+Energy Efficiency: Identifying energy waste, virtual renewable energy installations.
 
-Competitive Mode: Race against friends or ghost runs to deliver fastest and safest, with leaderboards and daily/weekly challenges.
+Biodiversity & Reforestation: Tree planting, wildlife protection, habitat restoration.
 
-Offline and Online Hybrid: Core game functionality (driving, cargo, UI) is playable offline; leaderboards, daily events, and multiplayer activate when online.
+Community Engagement: Awareness campaigns and supporting local environmental initiatives.
 
-Technologies and Packages
-Unity 2021 LTS with Universal Render Pipeline (URP)
+Gamified Learning: Seamlessly integrates educational content within missions, quizzes, and an in-game "Eco-Pedia" for deep dives into climate science and sustainable practices.
 
-TextMeshPro for advanced text rendering
+Multiplayer & Collaboration: Form "EcoWarrior Teams" or "Clans" to tackle missions collaboratively, compete on global and local leaderboards, and foster a sense of collective responsibility.
 
-Unity Input System for handling multiple input devices
+Progression & Rewards: Earn "Eco-Credits," unlock unique badges, achievements, and customize your EcoWarrior avatar as you make an impact.
 
-Cinemachine for dynamic camera control
+Dynamic "Impact Meter": Visualize your cumulative positive impact with real-time metrics (e.g., CO2 saved, water conserved, trees planted).
 
-Post-Processing stack for visual effects
+Social Integration: Share your achievements and insights on social media directly from the game.
 
-ProBuilder for rapid in-editor geometry prototyping
+Authentic Content: Partnering with local environmental organizations and experts to ensure game content is accurate, culturally relevant, and impactful.
 
-Mapbox Unity SDK (optional) for real-world map streaming
+🎮 Gameplay Mechanics
+City Selection & Personalization: Players begin by choosing an African city to champion. They can customize their EcoWarrior avatar to reflect their style.
 
-Photon PUN 2 or Mirror for real-time networking
+Mission Discovery: Missions are dynamically generated or discovered through exploration of the city map, interaction with NPCs, or challenges posted by other players/teams.
 
-Firebase or PlayFab for backend services such as cloud saves and leaderboards.
+Interactive Quests: Each mission is a mini-game or a series of tasks that requires strategic thinking, problem-solving, and often, collaboration. Success in missions directly contributes to the city's environmental health score.
 
-Repository Structure
-bash
-Copy
-Edit
-Assets/
-├── Animations/            # Character, vehicle, and UI animation clips
-│   ├── Characters/
-│   ├── Vehicles/
-│   └── UI/
-├── Audio/                 # Music, sound effects, voiceovers, ambient audio
-├── Materials/             # Materials and associated textures (vehicles, environment, UI)
-├── Models/                # 3D models (vehicles, environment, characters, cargo)
-├── Prefabs/               # Prefab assets for vehicles, characters, environment, UI panels
-├── Resources/             # Loadable data assets (JSON for missions, save files)
-├── Scenes/                # Unity scene files (MainMenu, Driving, Debrief, etc.)
-├── Scripts/               # C# scripts organised by gameplay, UI, systems, managers
-├── Shaders/               # Custom shaders (road surfaces, building materials, UI effects)
-├── Textures/              # Raw textures categorised by asset type
-├── UI/                    # UI elements: fonts, sprites, panel layouts
-└── Plugins/               # Third-party SDKs (Mapbox, Photon, Post-Processing)
-Getting Started
+Learning by Doing: As players complete missions, contextual information about the environmental challenge, its impact, and real-world solutions is provided, reinforcing climate education.
+
+Team Challenges: Larger, more complex missions require coordination and teamwork, promoting communication and shared goals among EcoWarriors.
+
+Leaderboards & Competitions: Individual and team leaderboards incentivize participation and friendly competition, showcasing the most impactful EcoWarriors and cities.
+
+Behavioral Nudging: The game design subtly encourages players to translate in-game successes into real-world sustainable actions, fostering lasting behavioral change.
+
+🛠️ Technology Stack
+Our project leverages a modern and scalable technology stack to ensure a robust, engaging, and performant gaming experience:
+
+Frontend (Web/Mobile): React, HTML, CSS (Tailwind CSS for styling). We will utilize libraries like lucide-react for icons and recharts for data visualization.
+
+Backend (Game Logic & APIs): Node.js or Python (to be determined based on specific needs, potentially using a framework like Express.js or FastAPI).
+
+Database: Firestore for real-time, scalable data storage (player profiles, mission progress, leaderboards, chat history).
+
+Real-time Communication: WebSockets for multiplayer interactions and live updates (if needed beyond Firestore's real-time capabilities).
+
+APIs: Gemini API for dynamic content generation (e.g., mission descriptions, educational trivia, NPC dialogue based on user input or in-game events) and Imagen API for image generation.
+
+Cloud Platform: Google Cloud Platform (GCP) services for hosting, authentication, and other backend functionalities.
+
+Version Control: Git & GitHub.
+
+CI/CD: GitHub Actions for automated testing, building, and deployment.
+
+🚀 Getting Started
+To get a local copy up and running, follow these simple steps.
+
 Prerequisites
-Unity Hub and Unity Editor (2021 LTS recommended with URP)
+Node.js (LTS recommended)
 
-A version control system, such as Git or Plastic SCM (optional)
+npm or yarn
 
-Mapbox access token (if using the Mapbox SDK)
+Git
 
-Photon or Mirror configuration for multiplayer features (if applicable)
+A GitHub account
 
-Installation and Setup
+(Optional but recommended for development) A Google Cloud Platform project with Firestore enabled and necessary API keys (for Gemini/Imagen).
+
+Installation
 Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/YourOrg/EcoWarriorsAfrica.git
+git clone https://github.com/your-username/EcoWarriorsAfrica.git
 cd EcoWarriorsAfrica
-Open in Unity Hub:
-
-Click Add → select project folder → Open.
-
-Install packages:
-
-Window → Package Manager → install TextMeshPro, Input System, Cinemachine, Post-Processing, ProBuilder.
-
-Allow restart:
-
-Permit Unity to restart if prompted to switch to the new Input System.
-
-Mapbox setup (if used):
-
-Window → Mapbox → Setup → Paste access token.
-
-Open Prototype scene:
-
-Assets/Scenes/Prototype. Unity to test basic driving and cargo pickup.
-
-Other scenes:
-
-MainMenu, AvatarSelect, MissionHub, Driving, Debrief, Pause, and Settings.
-
-Roadmap and Next Steps
-Phase II: Import full city maps (Nairobi, Lagos, Accra, Cape Town) via Mapbox or static OSM meshes.
-
-Phase III: Implement progression systems, vehicle upgrades, and advanced mission types (solar installs, community quizzes).
-
-Phase IV: Add online competitive delivery mode with real-time races and global leaderboards.
-
-Phase V: Deploy to mobile platforms, implement accessibility options, and localise content into multiple languages.
-
-Contributing
-Fork the repository and create a new branch for your feature:
-
-bash
-Copy
-Edit
-git checkout -b feature/YourFeatureName
-Commit your changes with a descriptive message:
-
-bash
-Copy
-Edit
-git commit -m "Implement new mission flow"
-Could you push your branch and create a pull request for review?
-
-Could you ensure the code follows project conventions and includes tests or manual test steps?
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 
+Install Frontend Dependencies:
+
+cd frontend # or whatever your frontend directory is named
+npm install # or yarn install
 
 
+Install Backend Dependencies (if applicable):
+
+cd backend # or whatever your backend directory is named
+npm install # or pip install -r requirements.txt for Python
 
 
+Configure Environment Variables:
+Create a .env file in your frontend and/or backend directories based on the provided .env example files. This will include your Firebase configuration, Google API keys, etc.
+
+# Example .env for frontend
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+REACT_APP_FIREBASE_MEASUREMENT_ID=your_firebase_measurement_id
+REACT_APP_GEMINI_API_KEY=your_gemini_api_key # This might be automatically provided by Canvas runtime
 
 
+Note: In the Canvas environment, __app_id, __firebase_config, and __initial_auth_token are automatically provided. You will adapt your code to use these global variables.
+
+Run the application:
+
+# From the frontend directory
+npm start # or yarn start
+
+# From the backend directory (if applicable)
+npm start # or python app.py
+
+
+The frontend application should open in your browser (usually http://localhost:3000).
+
+🤝 Contributing
+We welcome contributions from everyone who shares our passion for environmental sustainability and game development!
+
+Fork the Project.
+
+Create your Feature Branch: git checkout -b feature/AmazingFeature
+
+Commit your Changes: git commit -m 'Add some AmazingFeature'
+
+Push to the Branch: git push origin feature/AmazingFeature
+
+Open a Pull Request.
+
+Please ensure your code adheres to our linting rules and passes all status checks before submitting a pull request. We aim for clean, well-commented, and thoroughly tested code.
+
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
+
+📞 Contact
+ecowarriorsafrica@gmail.com
+
+Project Link: https://github.com/EcoWarriorsAfrica/EcoStreet-Africa
+
+🙏 Acknowledgements
+All the dedicated EcoWarriors around the globe.
+
+The open-source community for amazing tools and libraries.
+
+The people and vibrant cultures of African cities inspire this project.
